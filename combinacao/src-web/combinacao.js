@@ -44,7 +44,7 @@ function ordenaNumeros(numeros) {
 }
 
 function mostraJogo(numeros, listaIndices, numeroJogo) {
-	let textoJogo = nuumeroJogo + ": " + numeros[listaIndices[0]];
+	let textoJogo = numeroJogo + ": " + numeros[listaIndices[0]];
 	for (let ponteiroIndice = 1; ponteiroIndice < listaIndices.length; ponteiroIndice++) {
 		textoJogo += ", " + numeros[listaIndices[ponteiroIndice]];
 	}
