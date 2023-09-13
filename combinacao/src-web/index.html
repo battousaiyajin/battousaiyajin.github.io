@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="ISO-8859-1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="combinacao.js"></script>
+		<title>Combina&ccedil;&otilde;es</title>
+		<link rel="stylesheet" href="estilos.css">
+	</head>
+	<body>
+		<div>
+			<div>
+				<div>Informe os n&uacute;meros desejados (separados por espa&ccedil;o)</div>
+				<input id="numeros" type="text" />
+			</div>
+			<div>
+				<div>Informe a quantidade de n&uacute;meros por jogo</div>
+				<input id="quantidade" type="number" min="4" max="20" />
+			</div>
+			<p>
+				<button onclick="obterDados()">Gerar jogos</button>
+			</p>
+		</div>
+		<div>
+			<div>Quantidade de jogos: <span id="quantidade-de-jogos"></span></div>
+			<div>Jogos:</div>
+			<div id="jogos"></div>
+		</div>
+	</body>
+</html>
