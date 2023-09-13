@@ -21,8 +21,8 @@ function combinacoes(numeros, quantidade) {
 		for (let indice = listaIndices[ponteiroIndice]; indice < indiceLimite; indice++) {
 			listaIndices[ponteiroIndice] = indice;
 			if (distanciaAteUltimoPonteiro == 0) {
-				mostraJogo(numeros, listaIndices);
 				quantidadeDeJogos++;
+				mostraJogo(numeros, listaIndices, quantidadeDeJogos);
 			} else {
 				listaIndices.push(indice + 1);
 				proximasCombinacoes(listaIndices, quantidade, numeros);
@@ -43,8 +43,8 @@ function ordenaNumeros(numeros) {
 	});
 }
 
-function mostraJogo(numeros, listaIndices) {
-	let textoJogo = numeros[listaIndices[0]];
+function mostraJogo(numeros, listaIndices, numeroJogo) {
+	let textoJogo = nuumeroJogo + ": " + numeros[listaIndices[0]];
 	for (let ponteiroIndice = 1; ponteiroIndice < listaIndices.length; ponteiroIndice++) {
 		textoJogo += ", " + numeros[listaIndices[ponteiroIndice]];
 	}
